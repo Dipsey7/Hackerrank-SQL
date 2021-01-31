@@ -1,0 +1,5 @@
+select
+if(A >= B + C or B >= C + A or C >= A + B,'Not A Triangle',
+    if(A = B and A = C and C = B, 'Equilateral',
+      if(A = B or A = C or C = B, 'Isosceles','Scalene')))
+from triangles
